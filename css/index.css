@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+ol,ul{
+    list-style-type: none;/*去除列表标识*/
+}
+a{
+    color: #666;
+    text-decoration: none;/*去掉下划线*/
+}
+.left{/*左浮动*/
+    float: left;
+}
+.right{/*右浮动*/
+    float: right;
+}
+#top,#header,#nav,#banner,#star,#accessory,#wold,#server,#afterserver,#footer{/*测试代码*/
+    height: 100px;
+    width: 100%;
+    border: 1px solid #000;
+}
+.container{
+    width: 1280px;
+    border: 1px solid red;
+    margin: 0px auto;
+}
+#top{
+    height: 5px;
+    background-color: #00925F;
+}
+#header{
+    height: 30px;
+    background-color: #2d2d2d;
+}
+#header #xlwb{
+    width: 20px;
+    height: 16px;
+    background: url("../img/icons.png") no-repeat -47px -95px;/*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺，后面的参数是图片大小框位移*/
+}
+#header #txwb{
+    width: 16px;
+    height: 20px;
+    background: url("../img/icons.png") no-repeat -27px -92px;
+}
+#header #tel{
+    color:#00925F;
+}
+#header li a{
+    color: #B2B2B2;
+    font-size: 13px;
+    border-right: 1px solid #B2B2B2;
+    margin: 0px 10px 0px 0px;
+    padding:0px 10px 0px 0px;
+}
+#header li a:hover{
+    color: #00925F;
+}
+#header li span{
+    margin-left: 0px;
+    width: 19px;
+    height: 16px;
+    display: inline-block;/*span 是行内元素 不可以设置高宽，把显示方式设置为行内块就可以设置了*/
+    background: url("../img/icons.png") no-repeat 0px -96px;
+    vertical-align: middle;/*显示方式*/
+}
+#header #shopping a{
+    margin: 0px 5px 0px 10px;
+    padding-right: 0px;
+    border: none;
+}
+#header #header_left div{
+    float: left;
+    margin: 5px 6px 0px;
+}
+#header li{
+    float: left;
+    line-height:30px ;
+}
+/*设置导航栏样式*/
+#nav{
+    height: 90px;
+    background-color: #eee;
+}
+#nav li{
+    float: left;
+    margin:0px 20px;
+    line-height: 90px;
+}
+#nav a{
+    color: #666;
+    font-weight: bold;/*加粗文字*/
+}
+#nav li a:hover{
+    color: #00925f;
+}
+/*设置网页明星机型部分的样式*/
+#star{
+    height: 700px;
+    background-color: #F2F2F2;
+}
+#star #star_top{
+    text-align: center;
+    margin: 10px;
+}
+#star ul{
+    width: 1263px;
+    margin: 10px auto;
+}
+#star li{
+    width: 300px;
+    float: left;
+    border-bottom:4px solid #dfdfdf;
+    transition:all .3s;/*2D过渡，过渡时间为3s*/    
+}
+#star li:hover{
+    border-bottom:4px solid #4fb590;
+    transform: translateY(-10px);/*2D转换，向上移动10像素*/
+}
+#star img{
+    width: 300px;
+}
+#star li h3{
+    text-align: center;
+    margin-top: 10px;
+}
+#star li p{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 12px;
+    color: #bdbdbd;
+}
+#star .money{
+    font-size: 15px;
+    color: #00925f;
+}
+#star li span{
+    width: 13px;
+    height: 13px;
+    background:url(/oppo/img/icons-1.png) no-repeat -177px -1014px;
+    display: inline-block;
+    vertical-align: middle;/*显示方式*/
+}
+#star .line{
+    width: 0px;
+    height: 450px;
+    border-left: 1px solid #eaeaea;
+    margin: 0px 10px;
+}
+/*精选配件部分*/
+#accessory{
+    height: 950px;
+    background-color: #F6F6F6;
+}
+#accessory #acc_main{
+    width: 1115px;
+    margin: 0px auto;
+}
+#accessory #acc_top{
+    text-align: center;
+    margin:0px auto;
+}
+#accessory .acc_left{
+    width: 540px;
+    height: 950px;
+}
+#accessory .acc_left>div{
+    float: left;
+    border-bottom:3px solid #eaeaea;
+    margin: 10px;
+}
+#accessory .acc_left>div:hover{
+    border-bottom:3px solid #4fb590;
+    transition:all .3s;/*2D过渡，过渡时间为3s*/    
+    transform: translateY(-10px);/*2D转换，向上移动10像素*/
+}
+#accessory .acc_left img{/*设置图片统一宽度*/
+    width: 250px;
+}
+#accessory .acc_left>div:last-child img{/*高级选择器：选择了acc_left底下的最后一个div下的图片*/
+    width: 520px;
+    height: 254.5px;
+}
+#accessory .acc_all{
+    width: 200px;
+    height: 200px;
+    background-color:#eee;
+    border:3px solid #eaeaea;
+    padding: 20px;
+   /* box-sizing: border-box; 改变元素事迹所占大小的计算方式：相当于取消了内外边距 占比*/
+}
+#accessory .acc_all p:first-child{/*第一个p*/
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+}
+#accessory .acc_all li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+#accessory .acc_all li a:hover{
+    color: #00925f;
+}
+#accessory .acc_all .line{
+    width: 150px;
+    height: 0px;
+    border-top: 1px solid #ccc;
+    clear: both;
+    margin: 10px auto;
+}
+#accessory .acc_all p:last-child{
+    text-align: center;
+    padding-top: 15px;
+}
+#accessory .acc_all p:last-child a{
+    color:#000
+}
+#accessory .acc_all p:last-child a:hover{
+    color: #00925f;
+}
+#accessory .acc_all span{
+    width: 13px;
+    height: 13px;
+    background:url(/oppo/img/icons-1.png) no-repeat -177px -1014px;
+    display: inline-block;
+    vertical-align: middle;/*显示方式*/
+    margin-left: 10px;
+}
+#accessory .acc_right{
+    width: 540px;
+}
+#accessory .acc_right>div{
+    float: left;
+    border-bottom:3px solid #eaeaea;
+    margin: 10px;
+}
+#accessory .acc_right>div:last-child img{
+    height: 242px;
+}
+#accessory .acc_right>div:hover{
+    border-bottom:3px solid #4fb590;
+    transition:all .3s;/*2D过渡，过渡时间为3s*/    
+    transform: translateY(-10px);/*2D转换，向上移动10像素*/
+}
+#accessory .acc_right div:first-child img{
+    width: 520px;
+}
+#accessory .acc_right div img{
+    width: 250px;
+}
+
+
+
