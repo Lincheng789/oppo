@@ -5,13 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oppo官网</title>
     <link rel="stylesheet" href="/oppo/css/index.css">
+    <link rel="stylesheet" href="/oppo/css/swiper.css">
+    <style type="text/css">
+		body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        #banner{
+            height:630px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 632px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+	</style>
 </head>
 <body>
     <!-- 页面的顶部 -->
     <div id="top">
-        <div class="container">
-
-        </div>
+        <div class="container"></div>
     </div>
     <!-- 页面的头部 -->
     <div id="header">
@@ -35,7 +72,7 @@
     <div id="nav">
         <div class="container">
             <div id="logo" class="left">
-                <img src="/oppo/img/logo.png" alt="">
+                <span></span>
             </div>
             <ul class="right">
                 <li><a href="#">首页</a></li>
@@ -50,9 +87,19 @@
     </div>
     <!-- 页面的banner -->
     <div id="banner">
-        <div class="container">
-
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/banner1.jpg" width="100%;" height="630"></div>
+                <div class="swiper-slide"><img src="img/banner2.jpg" width="100%;" height="630"></div>
+                <div class="swiper-slide"><img src="img/banner3.jpg" width="100%;" height="630"></div>
+                <div class="swiper-slide"><img src="img/banner4.jpg" width="100%;" height="630"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">1</div>
+            <div class="swiper-button-prev"></div>
         </div>
+        <div class="banner-nav-bg"></div>
     </div>
     <!-- 明星机型 -->
     <div id="star">
@@ -147,50 +194,202 @@
         </div>
     </div>
     <!-- 搜索欧珀 -->
-    <div id="wold">
+    <div id="world">
         <div class="container">
-            <div id="wold_top">
-                <img src="/oppo/img/weibo.png" alt="">
-            </div>
-            <div class="wold_main">
-                <div class="wold_left">
+            <div class="world_top">
+                <img src="/oppo/img/weibo.png" alt=""></div>
+            <div class="world_main">
+                <div class="world_left left">
                     <div><img src="/oppo/img/20150226100534QqezQ85N6y.jpg" alt=""></div>
                     <div><img src="/oppo/img/20150226100534QqezQ85N6y.jpg" alt=""></div>
                     <div><img src="/oppo/img/20150226100534QqezQ85N6y.jpg" alt=""></div>
-                    <div><img src="/oppo/img/20150226100534QqezQ85N6y.jpg" alt=""><<img src="" alt="">/div>
+                    <div><img src="/oppo/img/20150226100534QqezQ85N6y.jpg" alt=""></div>
                 </div>
-                <div class="wold_right">
-                    <div id="wold_title">
+                <div class="world_right right">
+                    <div id="world_title">
                         <div id="news">新闻</div>
                         <div id="weibo">微博</div>
                     </div>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>
+                            <!-- 图文混排：dl嵌套dt：列表表题+dd列表内容 -->
+                            <dl>
+                                <dt><img src="/oppo/img/201502271135596D2wBJxvH0.jpg" alt=""></dt>
+                                <dd>oppoR5金色版，打造纽约州梦幻之旅这是一个很长的段落</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <!-- 图文混排：dl嵌套dt：列表表题+dd列表内容 -->
+                            <dl>
+                                <dt><img src="/oppo/img/201502271135596D2wBJxvH0.jpg" alt=""></dt>
+                                <dd>oppoR5金色版，打造纽约州梦幻之旅</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <!-- 图文混排：dl嵌套dt：列表表题+dd列表内容 -->
+                            <dl>
+                                <dt><img src="/oppo/img/201502271135596D2wBJxvH0.jpg" alt=""></dt>
+                                <dd>oppoR5金色版，打造纽约州梦幻之旅</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <!-- 图文混排：dl嵌套dt：列表表题+dd列表内容 -->
+                            <dl>
+                                <dt><img src="/oppo/img/201502271135596D2wBJxvH0.jpg" alt=""></dt>
+                                <dd>oppoR5金色版，打造纽约州梦幻之旅</dd>
+                            </dl>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- 服务部分 -->
-    <div id="server">
+    <div id="serve">
         <div class="container">
-
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="" alt="">
+                        </dt>
+                        <dd class="dd1">正品保障</dd>
+                        <dd class="dd2">所有的商品都是原装正品</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="" alt="">
+                        </dt>
+                        <dd class="dd1">正品保障</dd>
+                        <dd class="dd2">所有的商品都是原装正品</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="" alt="">
+                        </dt>
+                        <dd class="dd1">正品保障</dd>
+                        <dd class="dd2">所有的商品都是原装正品</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="" alt="">
+                        </dt>
+                        <dd class="dd1">正品保障</dd>
+                        <dd class="dd2">所有的商品都是原装正品</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl>
+                        <dt>
+                            <img src="" alt="">
+                        </dt>
+                        <dd class="dd1">正品保障</dd>
+                        <dd class="dd2">所有的商品都是原装正品</dd>
+                    </dl>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- 售后部分 -->
     <div id="afterserver">
         <div class="container">
-
+            <ul>
+                <li>
+                    <ol>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于OPPO</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于OPPO</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于OPPO</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于OPPO</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">关于OPPO</a></li>
+                        <li><a href="#">新闻中心</a></li>
+                        <li><a href="#">人才招聘</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <ol>
+                        <li><span class="xlwb"></span><a href="#">新浪微博</a></li>
+                        <li><span class="txwb"></span><a href="#">腾讯微博</a></li>
+                        <li><span class="rrw"></span><a href="#">人人网</a></li>
+                        <li><span class="qqkj"></span><a href="#">qq空间</a></li>
+                    </ol>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- 底部部分 -->
     <div id="footer">
         <div class="container">
-
+            <p>
+                <img src="/oppo/img/i-f-logo.png" alt="">
+                <span>@2000-2015&nbsp;&nbsp;&nbsp;北京 </span>
+                <a href="#">版权说明</a>
+                <a href="#">版权说明</a>
+                <a href="#">版权说明</a>
+                <a href="#">版权说明</a>
+                <a href="#">版权说明</a>
+            </p>
         </div>
     </div>
+    <div id="fhdb">
+        <a onclick="pageScroll()"><span></span></a>  
+    </div>
+    <script type="text/javascript" src="/oppo/js/swiper.js"></script>
+    <script type="text/javascript" src="/oppo/js/index.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            loop: true,
+            autoplay: 3000,
+    
+            
+            speed: 1000,
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            effect: 'cube',//  effect: 'flip',effect: 'coverflow',slide', 'fade',cube
+            grabCursor: true,
+            cube: {
+                shadow: false,
+                slideShadows: false,
+                shadowOffset: 20,
+                shadowScale: 0.94
+            }
+        });
+    </script>
 </body>
 </html>

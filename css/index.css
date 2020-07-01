@@ -19,11 +19,10 @@ a{
 #top,#header,#nav,#banner,#star,#accessory,#wold,#server,#afterserver,#footer{/*测试代码*/
     height: 100px;
     width: 100%;
-    border: 1px solid #000;
+
 }
 .container{
     width: 1280px;
-    border: 1px solid red;
     margin: 0px auto;
 }
 #top{
@@ -33,6 +32,7 @@ a{
 #header{
     height: 30px;
     background-color: #2d2d2d;
+    overflow: hidden;
 }
 #header #xlwb{
     width: 20px;
@@ -80,13 +80,20 @@ a{
 }
 /*设置导航栏样式*/
 #nav{
-    height: 90px;
+    height: 70px;
     background-color: #eee;
+}
+#nav #logo span{
+    width: 170px;
+    height: 65px;
+    background:url(/oppo/img/logo.png) no-repeat 0px -10px;
+    display: inline-block;
+    vertical-align: middle;/*显示方式*/
 }
 #nav li{
     float: left;
     margin:0px 20px;
-    line-height: 90px;
+    line-height: 70px;
 }
 #nav a{
     color: #666;
@@ -152,6 +159,7 @@ a{
 #accessory{
     height: 950px;
     background-color: #F6F6F6;
+    overflow: hidden;/*更高级的清除浮动*/
 }
 #accessory #acc_main{
     width: 1115px;
@@ -254,6 +262,201 @@ a{
 #accessory .acc_right div img{
     width: 250px;
 }
+/*设置搜索欧珀样式*/
+#world{
+    height: 700px;
+    /*clear: both;/*一开始图片位置错了，是因为受到上面浮动的影响，所以这边清除一下浮动*/
+    overflow: hidden;/*更高级的清除浮动，属于下策*/
+    background-color: #eaeaea;
+}
+#world .world_top{
+    clear: both;
+    margin:20px 0px;
+    width: 1280px;
+    text-align: center;
+}
+#world .world_main{
+    clear: both;
+    width: 1230px;
+    margin: 0px auto;
+}
+#world .world_left{
+    width: 800px;
+}
+#world .world_left div{
+    float: left;
+    margin: 10px;
+    border-bottom:3px solid #eaeaea;
+}
+#world .world_left div:hover{
+    border-bottom:3px solid #4fb590;
+    transition:all .3s;/*2D过渡，过渡时间为3s*/    
+    transform: translateY(-10px);/*2D转换，向上移动10像素*/
+}
+#world .world_right{
+    margin-top: 10px;
+    height: 560px;
+    width: 400px;
+    background-color: #fff;
+}
+#world .world_right #world_title{
+    height: 60px;
+}
+#world .world_right #world_title div{
+    width:200px;
+    height: 60px;
+    background-color: #eaeaea;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+    border-top:2px solid #eaeaea; ;
+}
+#world .world_right #world_title div:hover{
+    border-top:3px solid #4fb590;
+    background-color: #fff
+}
+#world .world_right ul li{
+    background-color:#eaeaea;
+    margin: 20px 10px;
+}
+#world .world_right dl{
+    width: 380px;
+    height: 100px;
+    position: relative;/*相对定位*/
+}
+#world .world_right dl dt{
+    position: absolute;/*绝对定位 关于父元素*/
+}
+#world .world_right dd{
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    padding-right: 10px;
+    box-sizing: border-box;/*改变计算方式，相当于父元素不会增加边距宽 */
+}
+#world .world_right ul li dl img{
+    height: 100px;
+}
+/* 设置服务部分样式 */
+#serve{
+    margin: 0px auto;
+    height: 100px;
+    background-color: #fff;
+    text-align: center;
+}
+#serve ul{
+    width: 1110px;
+    overflow: hidden;
+    clear: both;
+    margin: 0px auto;
+    height: 99px;
+    border-bottom: 1px solid #666;
+}
+#serve li{
+    position: relative;
+    float: left;
+    margin: 0px 10px;
+}
+#serve li:hover{
+    transition:all .3s;/*2D过渡，过渡时间为3s*/    
+    transform: translateY(-10px);/*2D转换，向上移动10像素*/
+}
+#serve dl{
+    width: 200px;
+    height: 100px;
+}
+#serve dt{
+    width: 41px;
+    height: 41px;
+    background: url(/oppo/img/icons.png) no-repeat 0px -45px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#serve dl .dd1{
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    font-weight: bold;
+}
+#serve dl .dd2{
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    color: #ccc;
+    font-size: 12px;
+}
+/*售后部分*/
+#afterserver{
+    height: 200px;
+    background-color: #fff;
+}
+#afterserver ul{
+    width: 1100px;
+    margin: 0px auto;
+    padding-top: 10px;
+}
+#afterserver ul li{
+    width: 140px;
+    float: left;
+    text-align: center;
+    margin: 0px 20px;
+}
+#afterserver ol li{
+    line-height: 30px;
+}
+#afterserver ol li:first-child a{
+    font-weight: bold;
+}
+#afterserver .xlwb{
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    background: url("../img/icons.png") no-repeat -47px -95px;/*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺，后面的参数是图片大小框位移*/
+    vertical-align: middle;
+}
+#afterserver .txwb{
+    display: inline-block;
+    width: 16px;
+    height: 20px;
+    background: url("../img/icons.png") no-repeat -27px -92px;
+    vertical-align: middle;
+}
+/*页面底部*/
+#footer{
+    height: 40px;
+    background-color: #2d2d2d;
+}
+#footer p{
+    line-height: 40px;
 
-
+}
+#footer p img{
+    margin-left: 10px;
+}
+#footer p span{
+    color: #828282;
+    margin: 0px 630px 0px 0px;
+}
+#footer .a{
+    margin-left: 400px;
+}
+#footer p a{
+    color: #fff;
+    margin: 0px 10px;
+}
+#footer p a:hover{
+    color:#4fb590;
+}
+/*返回顶部*/
+#fhdb span{
+    display: inline-block;
+    width: 124px;
+    height: 90px;
+    background: url("../img/totop.png") no-repeat 40px 10px;/*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺，后面的参数是图片大小框位移*/
+    vertical-align: middle;
+    position:fixed;/*固定定位：相当于对于浏览器的定位*/
+    bottom: 10px ;/*对于浏览器上方距离100像素*/
+    right:20px;/*左侧距离50像素*/
+}
 
