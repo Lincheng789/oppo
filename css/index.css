@@ -16,10 +16,15 @@ a{
 .right{/*右浮动*/
     float: right;
 }
+.fade{ /*隐藏css*/
+    opacity: 0; /*隐藏区域代码*/
+}
+.show{
+    opacity: 1;/*显示代码*/
+}
 #top,#header,#nav,#banner,#star,#accessory,#wold,#server,#afterserver,#footer{/*测试代码*/
     height: 100px;
     width: 100%;
-
 }
 .container{
     width: 1280px;
@@ -175,10 +180,12 @@ a{
 }
 #accessory .acc_left>div{
     float: left;
-    border-bottom:3px solid #eaeaea;
     margin: 10px;
 }
-#accessory .acc_left>div:hover{
+#accessory .acc_left>div>div{
+    border-bottom:3px solid #eaeaea;
+}
+#accessory .acc_left>div:hover div{
     border-bottom:3px solid #4fb590;
     transition:all .3s;/*2D过渡，过渡时间为3s*/    
     transform: translateY(-10px);/*2D转换，向上移动10像素*/
@@ -248,18 +255,21 @@ a{
     border-bottom:3px solid #eaeaea;
     margin: 10px;
 }
-#accessory .acc_right>div:last-child img{
+#accessory .acc_right>div>div{
+    border-bottom:3px solid #eaeaea;
+}
+#accessory .acc_rightdiv:last-child>div img{
     height: 242px;
 }
-#accessory .acc_right>div:hover{
+#accessory .acc_right>div:hover div{
     border-bottom:3px solid #4fb590;
     transition:all .3s;/*2D过渡，过渡时间为3s*/    
     transform: translateY(-10px);/*2D转换，向上移动10像素*/
 }
-#accessory .acc_right div:first-child img{
+#accessory .acc_right div:first-child>div img{
     width: 520px;
 }
-#accessory .acc_right div img{
+#accessory .acc_right div>div img{
     width: 250px;
 }
 /*设置搜索欧珀样式*/
@@ -281,17 +291,20 @@ a{
     margin: 0px auto;
 }
 #world .world_left{
-    width: 800px;
+	width: 800px;
 }
-#world .world_left div{
-    float: left;
-    margin: 10px;
-    border-bottom:3px solid #eaeaea;
+#world .world_left>div{
+	float: left;
+	margin: 10px;
+	
 }
-#world .world_left div:hover{
-    border-bottom:3px solid #4fb590;
-    transition:all .3s;/*2D过渡，过渡时间为3s*/    
-    transform: translateY(-10px);/*2D转换，向上移动10像素*/
+#world .world_left>div>div{
+	border-bottom: 3px solid #EAEAEA;
+	transition: all .3s;
+}
+#world .world_left>div:hover div{
+	border-bottom: 3px solid #00925F;
+    transform: translateY(-10px);
 }
 #world .world_right{
     margin-top: 10px;
@@ -300,18 +313,26 @@ a{
     background-color: #fff;
 }
 #world .world_right #world_title{
-    height: 60px;
+    height: 65px;
 }
-#world .world_right #world_title div{
-    width:200px;
-    height: 60px;
-    background-color: #eaeaea;
+#world .world_right #world_title a{
+    width:190px;
+    height: 65px;
     text-align: center;
-    line-height: 60px;
+    line-height: 65px;
     float: left;
     border-top:2px solid #eaeaea; ;
 }
-#world .world_right #world_title div:hover{
+#world .world_right #world_title>li>select{
+    background-color: #fff
+}
+#world .world_right #world_title>li>select2{
+    background-color: #EAEAEA
+}
+#world .world_right #world_title>li{
+    float: left;
+}
+#world .world_right #world_title li a:hover{
     border-top:3px solid #4fb590;
     background-color: #fff
 }
@@ -459,4 +480,8 @@ a{
     bottom: 10px ;/*对于浏览器上方距离100像素*/
     right:20px;/*左侧距离50像素*/
 }
+#fhdb .xs a:hover{
+    cursor:pointer
+}
+
 
