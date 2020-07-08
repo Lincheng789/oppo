@@ -308,7 +308,7 @@ a{
 }
 #world .world_right{
     margin-top: 10px;
-    height: 560px;
+    height: 566px;
     width: 400px;
     background-color: #fff;
 }
@@ -338,11 +338,11 @@ a{
 }
 #world .world_right ul li{
     background-color:#eaeaea;
-    margin: 20px 10px;
+    margin: 25px 10px;
 }
 #world .world_right dl{
     width: 380px;
-    height: 100px;
+    height: 90px;
     position: relative;/*相对定位*/
 }
 #world .world_right dl dt{
@@ -357,7 +357,7 @@ a{
     box-sizing: border-box;/*改变计算方式，相当于父元素不会增加边距宽 */
 }
 #world .world_right ul li dl img{
-    height: 100px;
+    height: 90px;
 }
 /* 设置服务部分样式 */
 #serve{
@@ -475,7 +475,7 @@ a{
     display: inline-block;
     width: 124px;
     height: 90px;
-    background: url("../img/totop.png") no-repeat 40px 10px;/*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺，后面的参数是图片大小框位移*/
+    background: url("../img/totop.png") no-repeat  45px 16px;/*no-repeat表示此背景图片在页面中只出现一次,不进行横向和纵向的平铺，后面的参数是图片大小框位移*/
     vertical-align: middle;
     position:fixed;/*固定定位：相当于对于浏览器的定位*/
     bottom: 10px ;/*对于浏览器上方距离100像素*/
