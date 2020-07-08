@@ -55,15 +55,9 @@ function pageScroll(){
    //按键显示功能
    }
 //tab 切换栏
-function $(id) {
-    return typeof id == "string" ? document.getElementById(id) : id;
-}
 window.onload = function() {
-    var titleName = $("world_title").getElementsByTagName("li");
-    var tabContent = $("world_title2").getElementsByTagName("div");
-    if (titleName.length != tabContent.length) {
-        return;
-    }
+    var titleName = document.getElementById("world_title").getElementsByTagName("li");
+    var tabContent = document.getElementById("world_title2").getElementsByTagName("div");
     for (var index = 0; index < titleName.length; index++) {
         titleName[index].id = index;
         titleName[index].onmouseover = function () {

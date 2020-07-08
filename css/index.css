@@ -321,20 +321,20 @@ a{
     text-align: center;
     line-height: 65px;
     float: left;
-    border-top:2px solid #eaeaea; ;
+    background-color: #EAEAEA
 }
 #world .world_right #world_title>li>select{
     background-color: #fff
-}
-#world .world_right #world_title>li>select2{
-    background-color: #EAEAEA
 }
 #world .world_right #world_title>li{
     float: left;
 }
 #world .world_right #world_title li a:hover{
-    border-top:3px solid #4fb590;
     background-color: #fff
+}
+.select a {
+    border-top:3px solid #4fb590;
+    background-color: #fff !important;
 }
 #world .world_right ul li{
     background-color:#eaeaea;
@@ -349,6 +349,7 @@ a{
     position: absolute;/*绝对定位 关于父元素*/
 }
 #world .world_right dd{
+    word-break: break-all;
     position: absolute;
     top: 20px;
     left: 130px;
